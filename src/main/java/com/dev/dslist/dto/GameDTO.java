@@ -15,6 +15,7 @@ public class GameDTO {
 	private String imgUrl;
 	private String shortDescription;
 	private String longDescription;
+	private Integer position;
 	
 	public GameDTO() {
 		
@@ -94,6 +95,14 @@ public class GameDTO {
 
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
+	}
+
+	public Integer getPosition() {
+		return position;
+	}
+
+	public void setPosition(Integer position) {
+		this.position = position;
 	}
 	
 	
