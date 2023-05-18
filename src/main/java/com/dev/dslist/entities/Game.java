@@ -1,5 +1,6 @@
 package com.dev.dslist.entities;
 
+
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -119,7 +120,7 @@ public class Game {
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
