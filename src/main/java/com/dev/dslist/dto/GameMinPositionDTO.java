@@ -6,7 +6,7 @@ public class GameMinPositionDTO {
 	
 	private Long id;
 	private String title;	
-	private Integer year;
+	private Integer gameYear;
 	private String imgUrl;
 	private String shortDescription;
 	private Integer position;
@@ -18,7 +18,7 @@ public class GameMinPositionDTO {
 	public GameMinPositionDTO(GameMinProjection projection) {
 		id = projection.getId();
 		title = projection.getTitle();
-		year = projection.getYear();
+		gameYear = projection.getGameYear();
 		imgUrl = projection.getImgUrl();
 		shortDescription = projection.getShortDescription();
 		position = projection.getPosition();
@@ -32,8 +32,8 @@ public class GameMinPositionDTO {
 		return title;
 	}
 
-	public Integer getYear() {
-		return year;
+	public Integer getGameYear() {
+		return gameYear;
 	}
 
 	public String getImgUrl() {
@@ -51,8 +51,5 @@ public class GameMinPositionDTO {
 	public void setPosition(Integer position) {
 		this.position = position;
 	}
-	
-	
-
 
 }
